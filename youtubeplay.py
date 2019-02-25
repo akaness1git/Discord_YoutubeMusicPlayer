@@ -20,7 +20,7 @@ async def on_message(message):
     if message.author.bot:
         return
     
-    if msg == '!kusooyaji':
+    if msg == '!play':
         if message.author.voice_channel is None:
             await client.send_message(message.channel ,'ボイスチャンネルに参加してからコマンドを打ってください。')
             return
